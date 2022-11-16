@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Sets up main page -->
+    <title>ICDT</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Add dependencies to allow eel integration -->
+    <script type="text/javascript" src="/eel.js"></script></script>
+
+</head>
+
+<body>
+
+    <!-- Loads all CSS components page -->
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    
+    <!-- Adding snippets of HTML to code, refernce here -->
+    <!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+    <div class="USB_select" include-html="../modules/usb_select_box.html"></div>
+    <div class="WIFI_select" include-html="../modules/wifi_select_box.html"></div>
+    
+    <!-- Loading animation widget -->
+    <!-- <div class="Loading_animation" include-html="../modules/loading_icon.html"></div> -->
+
+    <!-- Add all JavaScript file to allow functionalities -->
+    <script type="text/javascript" src="../scripts/index.js"></script>
+    
+    <!-- Adds all HTML snippets after body -->
+    <script> includeHTML() </script>
+
+</body>
+
+</html>

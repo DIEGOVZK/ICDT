@@ -1,0 +1,116 @@
+<!-- Menu for selecting the USB interface -->
+<div class="usb-menu-wrapper">
+
+    <!-- Selecion menu -->
+    <div class="select">
+        <select id="usb_select_list">
+            <option value="1">No USB</option>
+        </select>
+    </div>
+
+    <!-- Execute connection button -->
+    <button id="select-usb" class="select-usb">Start USB interface</button>
+    <button id="reload-usb" onclick="update_usb_list" class="select-usb">Update available ports</button>
+
+</div>
+
+<!-- Loads all CSS components of the module -->
+<style>
+
+    .usb-menu-wrapper {
+
+        align-items: center;
+        justify-content: center;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
+
+    .select-usb {
+
+        appearance: none;
+        outline: 1em;
+        border: 1em;
+        margin-top: 0.5em;
+        box-shadow: none;
+        border-radius: 0.25em;
+        width: 24em;
+
+        flex: 2;
+        color: #fff;
+        padding: 1em 3em;
+        cursor: pointer;
+        background-image: none;
+        background-color: var(--dakerBlue);
+    }
+
+    .select-usb:hover {
+
+        box-shadow: 4px 4px 6px 0 rgba(255,255,255,.1),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .1), 
+                    inset -4px -4px 6px 0 rgba(255,255,255,.1),
+                    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+    
+    }
+
+    .select-usb:active {
+
+        color: var(--anti);
+
+    }
+
+    select {
+
+        appearance: none;
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+
+        flex: 1;
+        padding: 0 1em;
+        color: #fff;
+        background-color: var(--dakerBlue);
+        background-image: none;
+        cursor: pointer;
+
+    }
+
+    select::-ms-expand {
+
+        display: none;
+    }
+
+    .select {
+
+        position: relative;
+        display: flex;
+        width: 20em;
+        height: 3em;
+        border-radius: 0.25em;
+        overflow: hidden;
+
+    }
+
+    .select::after {
+
+        content: "\25BC";
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em;
+        background-color: var(--lightBlue);
+        transition: 0.25s all ease;
+        pointer-events: none;
+
+    }
+
+    .select:hover::after {
+
+        color: var(--anti);
+
+    }
+
+</style>

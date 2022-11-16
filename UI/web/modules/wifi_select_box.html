@@ -1,0 +1,67 @@
+<!-- Menu for selecting the wifi interface -->
+<div class="wifi-menu-wrapper">
+
+    <!-- Selecion menu -->
+    <h5 id="select-wifi" class="select-wifi">192.168.10.2</h5>
+
+
+    <!-- Execute connection button -->
+    <button id="select-wifi" class="select-wifi">Use WIFI interface</button>
+    <button id="reload-wifi" class="select-wifi">Check IP</button>
+
+</div>
+
+<!-- Loads all CSS components of the module -->
+<style>
+
+    /* Conteiner */
+    .wifi-menu-wrapper {
+
+        align-items: center;
+        justify-content: center;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
+
+    /* Button */
+    .select-wifi {
+
+        appearance: none;
+        outline: 1em;
+        border: 1em;
+        margin-top: 0.5em;
+        box-shadow: none;
+        border-radius: 0.25em;
+        width: 24em;
+
+        flex: 3;
+        color: #fff;
+        padding: 1em 3em;
+        padding-right: 0;
+        padding-left: 0;
+        cursor: pointer;
+        text-align: center;
+        background-image: none;
+        background-color: var(--dakerBlue);
+    }
+
+    .select-wifi:hover {
+
+        box-shadow: 4px 4px 6px 0 rgba(255,255,255,.1),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .1), 
+                    inset -4px -4px 6px 0 rgba(255,255,255,.1),
+                    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+    
+    }
+
+    .select-wifi:active {
+
+        color: var(--anti);
+
+    }
+
+</style>
